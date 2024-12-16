@@ -24,3 +24,6 @@ CREATE TABLE user_subscriptions (
     FOREIGN KEY (plan_id) REFERENCES subscription_plans(id)
 );
 
+SELECT * FROM subscription_plans;
+SELECT * FROM permissions;
+SELECT * FROM user_subscriptions;
