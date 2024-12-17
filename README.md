@@ -43,13 +43,9 @@ Replace the {plan_id} with the id number saved in the table made previously.
 In JSON format provide this body text:
 ```
 {
-
     "name": {api_name},
-
     "api_endpoint": {api_endpoint},
-
     "description": {description}
-
 }
 ```
 It will automatically assign an id number to it.
