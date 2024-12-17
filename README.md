@@ -41,6 +41,7 @@ Replace the {plan_id} with the id number saved in the table made previously.
 - [POST]http://127.0.0.1:8000/admin/permissions
 
 In JSON format provide this body text:
+```
 {
 
     "name": {api_name},
@@ -48,9 +49,9 @@ In JSON format provide this body text:
     "api_endpoint": {api_endpoint},
 
     "description": {description}
-    
-}
 
+}
+```
 It will automatically assign an id number to it.
 
 - [DELETE]http://127.0.0.1:8000/admin/permission/{permission_id}
