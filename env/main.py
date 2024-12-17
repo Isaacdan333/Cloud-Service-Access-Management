@@ -11,7 +11,7 @@ import asyncio
 app = FastAPI()
 
 # Database setup
-DATABASE_URL = "mysql+pymysql://root:Csdegree2002!@localhost:3306/CloudService"
+DATABASE_URL = "mysql+pymysql://root:Csdegree2002!@localhost:3306/CloudService" # change 'root', 'Csdegree2002!', 'Cloudservice' with correct username, password, and database name
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
