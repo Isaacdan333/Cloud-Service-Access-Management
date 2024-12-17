@@ -19,19 +19,14 @@ MySQL - MySQL workbench
 - [POST]http://127.0.0.1:8000/admin/plans
 
 In JSON format provide this body text:
-
+```
 {
-
     "name": {plan_name}
-
     "description": {description}
-
     "permission": {list of permissions from api's}
-
     "usage_limit": {usage_limit}
-
 }
-
+```
 It will automatically assign an id number to it.
 
 - [DELETE]http://127.0.0.1:8000/admin/plans/{plan_id}
@@ -57,12 +52,12 @@ Replace the {plan_id} with the id number saved in the table made previously.
 - [POST]http://127.0.0.1:8000/admin/subscriptions
 
 In JSON format provide this body text:
-
+```
 {
   "user_id": {username},
   "plan_id": {plan_id}
 }
-
+```
 - [PUT]http://127.0.0.1:8000/admin/subscription/{user_id}?new_plan_id={plan_id}
 
 In the api, replace {user_id} with the already made username and {plan_id} with the already made plan_id number.
