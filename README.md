@@ -21,10 +21,15 @@ MySQL - MySQL workbench
 In JSON format provide this body text:
 
 {
+
     "name": {plan_name}
+
     "description": {description}
+
     "permission": {list of permissions from api's}
+
     "usage_limit": {usage_limit}
+
 }
 
 It will automatically assign an id number to it.
@@ -37,9 +42,13 @@ Replace the {plan_id} with the id number saved in the table made previously.
 
 In JSON format provide this body text:
 {
+
     "name": {api_name},
+
     "api_endpoint": {api_endpoint},
+
     "description": {description}
+    
 }
 
 It will automatically assign an id number to it.
