@@ -163,7 +163,7 @@ async def assign_subscription(subscription: SubscriptionUpdate, db: SessionLocal
     return {"message": "Subscription assigned successfully."}
 
 # updates user subscription plan to the provided id number
-@app.put("/admin/users/{user_id}/subscription", response_model=dict)
+@app.put("/admin/users/subscription/{user_id}", response_model=dict)
 async def update_user_subscription(user_id: str, new_plan_id: int, db: SessionLocal = Depends(get_db)):
     user_subscription = db.query(UserSubscription).filter(UserSubscription.user_id == user_id).first()
     if not user_subscription:
